@@ -35,9 +35,7 @@ def deploy():
     db.create_all()
 
     Role.insert_roles()
-
-    u = User(email="1919191234@qq.com", username="zouyi", password="zyywan", confirmed=True)
-    db.session.add(u)
+    
     uu = User(email="test@qq.com", username="test", password="test", confirmed=True)
     db.session.add(uu)
 
